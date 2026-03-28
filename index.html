@@ -11,13 +11,13 @@
             font-family: 'Plus Jakarta Sans', sans-serif; 
             background-color: #09090b; 
             color: #fafafa;
-            line-height: 1.7;
+            line-height: 1.8;
         }
         .gradient-border {
             position: relative;
             border-radius: 1rem;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             transition: all 0.3s ease;
         }
         .gradient-border:hover {
@@ -25,190 +25,244 @@
             background: rgba(255, 255, 255, 0.05);
         }
         .text-step {
-            background: linear-gradient(to bottom right, #fff 30%, rgba(255,255,255,0.5));
+            background: linear-gradient(to bottom right, #fff 40%, rgba(255,255,255,0.4));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        h2 { font-size: 2.25rem; font-weight: 800; margin-bottom: 1.5rem; letter-spacing: -0.02em; }
-        h3 { font-size: 1.5rem; font-weight: 600; color: #3b82f6; margin-top: 2rem; margin-bottom: 1rem; }
+        h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1.5rem; letter-spacing: -0.03em; }
+        h3 { font-size: 1.6rem; font-weight: 700; color: #3b82f6; margin-top: 2.5rem; margin-bottom: 1.2rem; }
+        h4 { font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
         .rag-box {
-            background: linear-gradient(145deg, rgba(59, 130, 246, 0.1), rgba(37, 99, 235, 0.05));
+            background: linear-gradient(145deg, rgba(59, 130, 246, 0.1), rgba(37, 99, 235, 0.03));
             border-left: 4px solid #3b82f6;
+            border-radius: 0.75rem;
         }
         .sprint-manifesto {
             background: #fff;
             color: #000;
-            padding: 3rem;
-            border-radius: 1.5rem;
+            padding: 3.5rem 2rem;
+            border-radius: 2rem;
             font-weight: 800;
             text-align: center;
-            font-size: 1.5rem;
-            margin: 4rem 0;
+            font-size: 1.75rem;
+            line-height: 1.2;
+            margin: 5rem 0;
+            box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.25);
         }
-        li { margin-bottom: 0.75rem; color: #a1a1aa; }
-        strong { color: #fff; }
+        p { margin-bottom: 1.5rem; color: #a1a1aa; }
+        li { margin-bottom: 0.8rem; color: #a1a1aa; }
+        strong { color: #fff; font-weight: 600; }
+        .footer-line { border-top: 1px solid rgba(255,255,255,0.05); padding-top: 4rem; margin-top: 6rem; }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased tracking-tight">
 
-    <nav class="p-8 max-w-7xl mx-auto flex justify-between items-center opacity-80">
-        <div class="text-xl font-bold tracking-tighter">K-AGILE<span class="text-blue-500">.</span></div>
-        <div class="text-xs font-mono">v1.0 / MARCH 2026</div>
+    <nav class="p-8 max-w-7xl mx-auto flex justify-between items-center opacity-60">
+        <div class="text-xl font-bold tracking-tighter uppercase italic">K-Agile<span class="text-blue-500">.</span></div>
+        <div class="text-[10px] font-mono tracking-widest uppercase">Tuesday, March 24, 2026 / Official v1.0</div>
     </nav>
 
-    <header class="max-w-4xl mx-auto pt-20 pb-32 px-6 text-center">
-        <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-6 text-step">
+    <header class="max-w-4xl mx-auto pt-20 pb-24 px-6">
+        <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-8 text-step">
             K-Agile Guide.
         </h1>
-        <p class="text-xl text-zinc-400 font-light max-w-2xl mx-auto">
-            The Operational Framework for the AI Era.
+        <p class="text-xl text-zinc-400 font-light max-w-2xl leading-relaxed">
+            The Operational Framework for the AI Era. Evolution of Agile, powered by Knowledge.
         </p>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 space-y-32 pb-40">
+    <main class="max-w-4xl mx-auto px-6 space-y-32 pb-20">
         
         <section id="purpose">
-            <h2 class="text-blue-500 text-sm font-mono uppercase tracking-widest mb-4">01. Purpose</h2>
-            <div class="text-2xl leading-relaxed text-zinc-200">
+            <h2 class="text-blue-500 text-xs font-mono uppercase tracking-[0.3em] mb-6">01. Purpose of the Guide</h2>
+            <div class="text-2xl leading-relaxed text-zinc-100 font-light">
                 K-Agile is an operational framework for developing and maintaining complex products, heavily inspired by Agile. This guide defines the roles, events, artifacts, and rules that bind these elements together. K-Agile is not a linear methodology but a circular ecosystem of knowledge. <strong>The K stands for Knowledge.</strong> It is in no way an alternative to Agile; rather, it embraces and enhances all its original principles.
             </div>
         </section>
 
         <section id="definition">
-            <h2 class="text-blue-500 text-sm font-mono uppercase tracking-widest mb-4">02. Definition</h2>
+            <h2 class="text-blue-500 text-xs font-mono uppercase tracking-[0.3em] mb-6">02. Definition</h2>
             <p class="text-xl text-zinc-400 mb-12">K-Agile is based on the awareness that Artificial Intelligence is not just a tool, but a cognitive agent that requires a structured context to function effectively.</p>
             
-            <div class="grid gap-8">
-                <div class="gradient-border p-8">
+            <div class="space-y-10">
+                <div class="gradient-border p-10">
                     <h3 class="mt-0">2.1 The Three Pillars of Augmented Empiricism</h3>
-                    <ul class="list-none space-y-6">
-                        <li><strong class="block text-xl mb-1">Radical Transparency</strong> Every decision (meeting/code) must be visible to the AI to prevent hallucinations or deviation from business goals. The entire codebase must be made known to the AI, which must demonstrate an understanding of its historical context, dependencies, style, and standards.</li>
-                        <li><strong class="block text-xl mb-1">Semantic Inspection</strong> The team doesn't just check if the code "runs," but whether the meaning (the intent) has been respected.</li>
-                        <li><strong class="block text-xl mb-1">Prompt Adaptation</strong> Continuous improvement involves refining the language and context provided to the machine.</li>
+                    <ul class="list-none space-y-8 mt-8">
+                        <li>
+                            <strong class="block text-white text-xl mb-2 underline decoration-blue-500 underline-offset-8">Radical Transparency</strong> 
+                            Every decision (meeting/code) must be visible to the AI to prevent hallucinations or deviation from business goals. The entire codebase must be made known to the AI, which must demonstrate an understanding of its historical context, dependencies, style, and standards.
+                        </li>
+                        <li>
+                            <strong class="block text-white text-xl mb-2 underline decoration-blue-500 underline-offset-8">Semantic Inspection</strong> 
+                            The team doesn't just check if the code "runs," but whether the meaning (the intent) has been respected.
+                        </li>
+                        <li>
+                            <strong class="block text-white text-xl mb-2 underline decoration-blue-500 underline-offset-8">Prompt Adaptation</strong> 
+                            Continuous improvement involves refining the language and context provided to the machine.
+                        </li>
                     </ul>
                 </div>
 
-                <div class="gradient-border p-8">
-                    <h3 class="mt-0 text-purple-500">2.2 K-Agile Values</h3>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <p><strong>Courage:</strong> To discard fast-generated code if it is not fully understood.</p>
-                        <p><strong>Focus:</strong> On business intent, leaving syntax to the machine.</p>
-                        <p><strong>Responsibility:</strong> The "Context Owner" is the ultimate guarantor of the system's truth.</p>
-                        <p><strong>Transparency & Explainability:</strong> Teams must understand and share AI-produced code and explain choices to third parties.</p>
+                <div class="gradient-border p-10">
+                    <h3 class="mt-0">2.2 K-Agile Values</h3>
+                    <div class="grid md:grid-cols-2 gap-x-12 gap-y-8 mt-6 text-sm leading-relaxed">
+                        <div><strong class="text-blue-400 block mb-1">Courage:</strong> To discard fast-generated code if it is not fully understood.</div>
+                        <div><strong class="text-blue-400 block mb-1">Focus:</strong> On business intent, leaving syntax to the machine.</div>
+                        <div><strong class="text-blue-400 block mb-1">Responsibility:</strong> The "Context Owner" is the ultimate guarantor of the system's truth.</div>
+                        <div><strong class="text-blue-400 block mb-1 text-zinc-100">Transparency & Explainability:</strong> Teams must understand and share AI-produced code and explain choices to third parties (e.g., regulators or end-users).</div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="team">
-            <h2 class="text-blue-500 text-sm font-mono uppercase tracking-widest mb-4">03. The Team</h2>
+            <h2 class="text-blue-500 text-xs font-mono uppercase tracking-[0.3em] mb-6">03. The K-Agile Team</h2>
             
-            <div class="space-y-20">
+            <div class="space-y-24">
                 <div class="augmented-role">
-                    <h3 class="text-zinc-500 text-sm font-bold uppercase tracking-widest">3.1 The Product Owner</h3>
-                    <p class="text-3xl font-bold mb-6 italic tracking-tight">The Visionary Prototyper</p>
-                    <p class="text-zinc-400">The PO is the first link in the technical production chain.</p>
-                    <ul class="mt-6 space-y-4">
-                        <li><strong>Low-Code/AI Prototyping:</strong> Uses AI to create "functional drafts" (MVPs). If a User Story cannot be visualized or simulated by AI, it is not "Ready." This follows requirements gathering but is mandatory.</li>
-                        <li><strong>Boundary Definition:</strong> Provides the AI with market constraints and business rules.</li>
+                    <h3 class="text-zinc-500 text-[10px] font-bold uppercase tracking-[0.4em] mb-4">3.1 The Product Owner</h3>
+                    <p class="text-4xl font-extrabold mb-8 tracking-tighter">The Visionary Prototyper</p>
+                    <p class="text-zinc-300">The PO is the first link in the technical production chain.</p>
+                    <ul class="mt-8 space-y-6">
+                        <li><strong class="text-white">Low-Code/AI Prototyping:</strong> Uses AI to create "functional drafts" (MVPs). If a User Story cannot be visualized or simulated by AI, it is not "Ready." This follows requirements gathering but is mandatory.</li>
+                        <li><strong class="text-white">Boundary Definition:</strong> Provides the AI with market constraints and business rules the code must respect.</li>
                     </ul>
                 </div>
 
                 <div class="augmented-role">
-                    <h3 class="text-zinc-500 text-sm font-bold uppercase tracking-widest">3.2 The Developer</h3>
-                    <p class="text-3xl font-bold mb-6 italic tracking-tight">The Context Owner & Master Prompter</p>
-                    <p class="text-zinc-400">The Developer is the director of software construction. They no longer "write" code; they orchestrate AI.</p>
-                    <ul class="mt-6 space-y-4">
-                        <li><strong>Master Prompter:</strong> Writes the "Contract of Intent." If the AI fails, the Dev fixes the Prompt or Context to prevent recurrence.</li>
-                        <li><strong>Context Owner:</strong> Responsible for "feeding" the system. Selects codebase segments for the AI (RAG).</li>
+                    <h3 class="text-zinc-500 text-[10px] font-bold uppercase tracking-[0.4em] mb-4">3.2 The Developer</h3>
+                    <p class="text-4xl font-extrabold mb-8 tracking-tighter">The Context Owner & Master Prompter</p>
+                    <p class="text-zinc-300 italic mb-8">The Developer is the director of software construction. They no longer "write" code; they orchestrate AI.</p>
+                    <ul class="space-y-6 mb-12">
+                        <li><strong class="text-white">Master Prompter:</strong> Writes the "Contract of Intent." If the AI fails, the Dev doesn't fix the line; they fix the Prompt or the Context to prevent recurrence.</li>
+                        <li><strong class="text-white">Context Owner:</strong> Responsible for "feeding" the system. Selects codebase segments for the AI (RAG) and maintains technical knowledge hygiene.</li>
                     </ul>
 
-                    <div class="rag-box p-8 mt-12 rounded-2xl">
+                    <div class="rag-box p-10 mt-12">
                         <h4 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest">Technical Note: RAG (Retrieval-Augmented Generation)</h4>
-                        <p class="text-zinc-300 text-sm leading-relaxed">The K-Agile framework uses RAG through three phases: 
-                            <strong>Retrieval</strong> (queries K-Base), 
-                            <strong>Augmentation</strong> (injects context into prompt), and 
-                            <strong>Generation</strong> (produces response based on data, eliminating hallucinations).</p>
+                        <p class="text-zinc-200 text-sm leading-relaxed mb-4">The K-Agile framework uses RAG to ensure AI acts as an internal expert on the company codebase through three phases:</p>
+                        <ul class="text-xs space-y-3 list-disc pl-4 opacity-80">
+                            <li><strong>Retrieval:</strong> The system queries the K-Base for relevant code snippets and meeting transcripts.</li>
+                            <li><strong>Augmentation:</strong> Retrieved info is injected into the prompt for a contextualized instruction.</li>
+                            <li><strong>Generation:</strong> AI generates the final response based on provided data, eliminating hallucinations.</li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="augmented-role">
-                    <h3 class="text-zinc-500 text-sm font-bold uppercase tracking-widest">3.3 The Scrum Master</h3>
-                    <p class="text-3xl font-bold mb-6 italic tracking-tight">Flow & Governance Architect</p>
-                    <p class="text-zinc-400 mb-8">The SM facilitates Human-AI synergy and guarantees system integrity.</p>
-                    <div class="grid md:grid-cols-2 gap-8 text-sm">
-                        <p><strong>Flow Management:</strong> Monitors cognitive burnout from high-speed production.</p>
-                        <p><strong>Ethics & Compliance:</strong> Ensures AI usage respects AI Act, GDPR, and data privacy.</p>
-                        <p><strong>Codebase Governance:</strong> Monitors for incompatible licenses (Copyleft/Restricted OS).</p>
-                        <p><strong>Result Audit:</strong> If the system becomes a "black box," the SM halts the sprint.</p>
+                    <h3 class="text-zinc-500 text-[10px] font-bold uppercase tracking-[0.4em] mb-4">3.3 The Scrum Master</h3>
+                    <p class="text-4xl font-extrabold mb-8 tracking-tighter">Flow & Governance Architect</p>
+                    <p class="text-zinc-300 mb-10 leading-relaxed">The SM facilitates the Human-AI synergy and guarantees system integrity.</p>
+                    <div class="grid md:grid-cols-2 gap-10 text-sm">
+                        <div>
+                            <strong class="text-white block mb-2">Flow Management</strong>
+                            Ensures friction-less synergy and monitors cognitive burnout from high-speed production.
+                        </div>
+                        <div>
+                            <strong class="text-white block mb-2">Ethics & Compliance Custodian</strong>
+                            Ensures AI usage respects the AI Act, GDPR, and data privacy.
+                        </div>
+                        <div>
+                            <strong class="text-white block mb-2">Codebase Governance</strong>
+                            Monitors for incompatible licenses (Copyleft/Restricted OS) that could risk Intellectual Property.
+                        </div>
+                        <div>
+                            <strong class="text-white block mb-2">Result Audit</strong>
+                            Ensures the team maintains control; if the system becomes a "black box," the SM halts the sprint to re-establish human understanding.
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="events">
-            <h2 class="text-blue-500 text-sm font-mono uppercase tracking-widest mb-4">04. Events</h2>
-            <p class="text-xl text-zinc-400">The one-week Sprint is the optimal choice to balance generative acceleration with human governance.</p>
+            <h2 class="text-blue-500 text-xs font-mono uppercase tracking-[0.3em] mb-6">04. K-Agile Events</h2>
+            <p class="text-xl text-zinc-300 font-light mb-12">The one-week Sprint is the optimal choice to balance generative acceleration with human governance.</p>
             
-            <ul class="mt-8 space-y-4">
-                <li><strong>Containing "AI Drift":</strong> Massive code volumes require frequent Semantic Reviews.</li>
-                <li><strong>Hyper-Fast Feedback:</strong> Waiting 2-3 weeks for a feature built in hours is inefficient.</li>
-                <li><strong>Context Sync:</strong> Weekly Context Refactoring prevents reality divergence.</li>
-            </ul>
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="p-8 gradient-border">
+                    <strong class="block text-white mb-3 italic">Containing "AI Drift"</strong>
+                    Massive code volumes require frequent Semantic Reviews to keep the "Human-in-the-loop."
+                </div>
+                <div class="p-8 gradient-border">
+                    <strong class="block text-white mb-3 italic">Hyper-Fast Feedback</strong>
+                    Waiting 2-3 weeks to validate a feature built in hours is an economic inefficiency.
+                </div>
+                <div class="p-8 gradient-border">
+                    <strong class="block text-white mb-3 italic">Context Sync</strong>
+                    Weekly Context Refactoring prevents the AI's "knowledge" from diverging from reality.
+                </div>
+            </div>
 
-            <div class="sprint-manifesto shadow-2xl shadow-blue-500/10">
+            <div class="sprint-manifesto">
                 "AI speed must never exceed the team's capacity for understanding. The one-week Sprint is the anchor of awareness over automation."
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6 mt-12">
-                <div class="p-6 bg-zinc-900 rounded-xl border border-zinc-800">
-                    <h4 class="text-white mb-2">4.1 Neural Briefing</h4>
-                    <p class="text-sm text-zinc-500 uppercase font-bold mb-2">Intent Sync</p>
-                    <p class="text-sm text-zinc-400 italic">Converts verbal conversations into Context Packages.</p>
+            <div class="space-y-12 mt-20">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="w-full md:w-1/3 text-blue-500 font-mono text-xs">4.1 Neural Briefing</div>
+                    <div class="w-full md:w-2/3">
+                        <strong class="block text-white text-xl mb-2 italic">Intent Synchronization</strong>
+                        Replaces Planning. Converts verbal conversations into Context Packages (goals, constraints, and ready prompts).
+                    </div>
                 </div>
-                <div class="p-6 bg-zinc-900 rounded-xl border border-zinc-800">
-                    <h4 class="text-white mb-2">4.2 Augmented Daily</h4>
-                    <p class="text-sm text-zinc-500 uppercase font-bold mb-2">Context Alignment</p>
-                    <p class="text-sm text-zinc-400 italic">Analysis of the Context Delta: Is the AI aligned?</p>
+                <div class="flex flex-col md:flex-row gap-6 border-t border-zinc-900 pt-8">
+                    <div class="w-full md:w-1/3 text-blue-500 font-mono text-xs">4.2 Augmented Daily</div>
+                    <div class="w-full md:w-2/3">
+                        <strong class="block text-white text-xl mb-2 italic">Context Alignment</strong>
+                        Analysis of the Context Delta: What changed in the codebase and knowledge in the last 24 hours? Is the AI aligned?
+                    </div>
                 </div>
-                <div class="p-6 bg-zinc-900 rounded-xl border border-zinc-800">
-                    <h4 class="text-white mb-2">4.3 Context Refactoring</h4>
-                    <p class="text-sm text-zinc-500 uppercase font-bold mb-2">Knowledge Hygiene</p>
-                    <p class="text-sm text-zinc-400 italic">Prevents degradation by removing obsolete prompts.</p>
+                <div class="flex flex-col md:flex-row gap-6 border-t border-zinc-900 pt-8">
+                    <div class="w-full md:w-1/3 text-blue-500 font-mono text-xs">4.3 Context Refactoring</div>
+                    <div class="w-full md:w-2/3">
+                        <strong class="block text-white text-xl mb-2 italic">Knowledge Hygiene</strong>
+                        Prevents context degradation by removing obsolete prompts and verifying AI architectural understanding.
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="artifacts">
-            <h2 class="text-blue-500 text-sm font-mono uppercase tracking-widest mb-4">05. Artifacts</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="gradient-border p-8">
-                    <h4 class="text-white text-xl mb-2 italic">The Living Context (K-Base)</h4>
-                    <p class="text-zinc-500 text-sm leading-relaxed">The heart of the system. Code, Knowledge Graph, and Meeting Memory.</p>
+            <h2 class="text-blue-500 text-xs font-mono uppercase tracking-[0.3em] mb-6">05. K-Agile Artifacts</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="gradient-border p-10">
+                    <h4 class="text-white text-2xl font-bold mb-4 tracking-tight italic">The Living Context (K-Base)</h4>
+                    <p class="text-zinc-400 leading-relaxed text-sm">The heart of the system. An integrated ecosystem of Code, Knowledge Graph, and Meeting Memory.</p>
                 </div>
-                <div class="gradient-border p-8">
-                    <h4 class="text-white text-xl mb-2 italic">The Interactive Backlog</h4>
-                    <p class="text-zinc-500 text-sm leading-relaxed">Goals linked to functional AI-generated prototypes.</p>
+                <div class="gradient-border p-10">
+                    <h4 class="text-white text-2xl font-bold mb-4 tracking-tight italic">The Interactive Backlog</h4>
+                    <p class="text-zinc-400 leading-relaxed text-sm">A list of goals directly linked to functional AI-generated prototypes for immediate validation.</p>
                 </div>
             </div>
         </section>
 
         <section id="dod">
-            <h2 class="text-blue-500 text-sm font-mono uppercase tracking-widest mb-4">06. Definition of Done</h2>
-            <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-12">
-                <ul class="list-none space-y-4 text-xl font-light">
-                    <li class="flex items-center gap-4"><span class="w-2 h-2 bg-blue-500 rounded-full"></span> Code generated/validated via Prompting.</li>
-                    <li class="flex items-center gap-4"><span class="w-2 h-2 bg-blue-500 rounded-full"></span> Context updated and re-indexed.</li>
-                    <li class="flex items-center gap-4"><span class="w-2 h-2 bg-blue-500 rounded-full"></span> AI Explainability ensured.</li>
-                    <li class="flex items-center gap-4"><span class="w-2 h-2 bg-blue-500 rounded-full"></span> Ethics & Compliance verified.</li>
+            <h2 class="text-blue-500 text-xs font-mono uppercase tracking-[0.3em] mb-6">06. Definition of Done (DoD)</h2>
+            <div class="bg-zinc-900/50 border border-zinc-800 p-12 rounded-3xl">
+                <ul class="list-none space-y-6 text-2xl font-light text-zinc-300">
+                    <li class="flex items-start gap-5 italic"><span class="text-blue-500 mt-2">→</span> Code generated/validated via Prompting.</li>
+                    <li class="flex items-start gap-5 italic"><span class="text-blue-500 mt-2">→</span> Context documentation updated and AI has indexed the new code.</li>
+                    <li class="flex items-start gap-5 italic"><span class="text-blue-500 mt-2">→</span> AI can explain the new feature (Explainability).</li>
+                    <li class="flex items-start gap-5 italic"><span class="text-blue-500 mt-2">→</span> Product meets corporate AI Ethics values and current regulations.</li>
                 </ul>
             </div>
         </section>
 
     </main>
 
-    <footer class="border-t border-zinc-900 py-20 text-center text-zinc-600 text-xs tracking-[0.3em] uppercase">
-        K-Agile Framework / Knowledge over Automation / 2026
+    <footer class="max-w-4xl mx-auto px-6 footer-line pb-20">
+        <div class="grid md:grid-cols-2 gap-8 items-end">
+            <div class="space-y-4">
+                <div class="text-white font-bold text-2xl tracking-tighter uppercase italic">K-Agile Framework</div>
+                <p class="text-xs text-zinc-500 max-w-xs leading-loose">Developed to bridge the gap between human creativity and generative efficiency. Licensed under the MIT License.</p>
+            </div>
+            <div class="text-right space-y-2">
+                <p class="text-white font-bold text-sm">Fabio Ricci</p>
+                <a href="mailto:riccifabio@icloud.com" class="text-blue-500 text-sm hover:underline">riccifabio@icloud.com</a>
+                <p class="text-[10px] text-zinc-600 mt-4 tracking-[0.2em]">K-Agile / MIT License / 2026</p>
+            </div>
+        </div>
     </footer>
 
 </body>
