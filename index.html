@@ -3,153 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K-Agile Guide | The AI-Native Operational Framework</title>
+    <title>K-Agile Guide - Official Version 1.0</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .k-gradient { background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%); }
-        .section-card { border-left: 4px solid #3b82f6; padding-left: 1.5rem; margin-bottom: 3rem; }
-        .highlight { color: #2563eb; font-weight: 700; }
+        body { font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; line-height: 1.6; color: #1a202c; }
+        .content-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h1 { border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 30px; }
+        h2 { font-size: 1.8rem; font-weight: 700; margin-top: 40px; margin-bottom: 15px; color: #2d3748; }
+        h3 { font-size: 1.4rem; font-weight: 600; margin-top: 25px; margin-bottom: 10px; color: #4a5568; }
+        h4 { font-size: 1.1rem; font-weight: 600; margin-top: 20px; color: #2d3748; }
+        p { margin-bottom: 16px; }
+        ul, ol { margin-bottom: 16px; padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .note-box { background-color: #f7fafc; border-left: 4px solid #4299e1; padding: 20px; margin: 25px 0; }
+        .rule-box { background-color: #fffaf0; border: 1px solid #fbd38d; padding: 20px; border-radius: 8px; text-align: center; font-style: italic; margin: 30px 0; }
+        .footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #e2e8f0; font-size: 0.875rem; color: #718096; text-align: center; }
+        .role-header { color: #3182ce; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 leading-relaxed">
+<body class="bg-white">
 
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 px-6 py-4">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <div class="text-xl font-black tracking-tighter uppercase">K-Agile<span class="text-blue-600">.</span></div>
-            <div class="hidden md:flex gap-6 text-xs font-bold uppercase tracking-widest text-slate-500">
-                <a href="#definition" class="hover:text-blue-600">Definition</a>
-                <a href="#team" class="hover:text-blue-600">Team</a>
-                <a href="#events" class="hover:text-blue-600">Events</a>
-                <a href="#dod" class="hover:text-blue-600">DoD</a>
+    <div class="content-container">
+        <header>
+            <h1 class="text-3xl font-bold">📘 K-Agile Guide: The Operational Framework for the AI Era</h1>
+            <p class="text-gray-600 font-medium">Official Version 1.0 — Tuesday, March 24, 2026</p>
+        </header>
+
+        <section>
+            <h2>1. Purpose of the Guide</h2>
+            <p>K-Agile is an operational framework for developing and maintaining complex products, heavily inspired by Agile. This guide defines the roles, events, artifacts, and rules that bind these elements together. K-Agile is not a linear methodology but a circular ecosystem of knowledge. The <strong>K stands for Knowledge</strong>. It is in no way an alternative to Agile; rather, it embraces and enhances all its original principles.</p>
+        </section>
+
+        <section>
+            <h2>2. Definition</h2>
+            <p>K-Agile is based on the awareness that Artificial Intelligence is not just a tool, but a cognitive agent that requires a structured context to function effectively.</p>
+
+            <h3>2.1 The Three Pillars of Augmented Empiricism</h3>
+            <ul>
+                <li><strong>Radical Transparency:</strong> Every decision (meeting/code) must be visible to the AI to prevent hallucinations or deviation from business goals. The entire codebase must be made known to the AI, which must demonstrate an understanding of its historical context, dependencies, style, and standards.</li>
+                <li><strong>Semantic Inspection:</strong> The team doesn't just check if the code "runs," but whether the meaning (the intent) has been respected.</li>
+                <li><strong>Prompt Adaptation:</strong> Continuous improvement involves refining the language and context provided to the machine.</li>
+            </ul>
+
+            <h3>2.2 K-Agile Values</h3>
+            <ul>
+                <li><strong>Courage:</strong> To discard fast-generated code if it is not fully understood.</li>
+                <li><strong>Focus:</strong> On business intent, leaving syntax to the machine.</li>
+                <li><strong>Responsibility:</strong> The "Context Owner" is the ultimate guarantor of the system's truth.</li>
+                <li><strong>Transparency and Explainability:</strong> Teams must be able to understand and share AI-produced code and explain AI-driven choices to third parties (e.g., regulators or end-users).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. The K-Agile Team</h2>
+            
+            <div class="role">
+                <p class="role-header">3.1 The Product Owner (The Visionary Prototyper)</p>
+                <p>The PO is the first link in the technical production chain.</p>
+                <ul>
+                    <li><strong>Low-Code/AI Prototyping:</strong> Uses AI to create "functional drafts" (MVPs). If a User Story cannot be visualized or simulated by AI, it is not "Ready." This follows requirements gathering but is mandatory.</li>
+                    <li><strong>Boundary Definition:</strong> Provides the AI with market constraints and business rules the code must respect.</li>
+                </ul>
             </div>
+
+            <div class="role">
+                <p class="role-header">3.2 The Developer (The Context Owner & Master Prompter)</p>
+                <p>The Developer is the director of software construction. They no longer "write" code; they orchestrate AI.</p>
+                <ul>
+                    <li><strong>Master Prompter:</strong> Writes the "Contract of Intent." If the AI fails, the Dev doesn't fix the line; they fix the Prompt or the Context to prevent recurrence.</li>
+                    <li><strong>Context Owner:</strong> Responsible for "feeding" the system. Selects codebase segments for the AI (RAG) and maintains technical knowledge hygiene.</li>
+                </ul>
+
+                <div class="note-box">
+                    <h4 class="mt-0">Technical Note: RAG (Retrieval-Augmented Generation)</h4>
+                    <p>The K-Agile framework uses RAG to ensure AI acts as an internal expert on the company codebase through three phases:</p>
+                    <ul>
+                        <li><strong>Retrieval:</strong> The system queries the K-Base for relevant code snippets and meeting transcripts.</li>
+                        <li><strong>Augmentation:</strong> Retrieved info is injected into the prompt for a contextualized instruction.</li>
+                        <li><strong>Generation:</strong> AI generates the final response based on provided data, eliminating hallucinations.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="role">
+                <p class="role-header">3.3 The Scrum Master (Flow & Governance Architect)</p>
+                <p>The SM facilitates the Human-AI synergy and guarantees system integrity.</p>
+                <ul>
+                    <li><strong>Flow Management:</strong> Ensures friction-less synergy and monitors cognitive burnout from high-speed production.</li>
+                    <li><strong>Ethics & Compliance Custodian:</strong> Ensures AI usage respects the AI Act, GDPR, and data privacy.</li>
+                    <li><strong>Codebase Governance:</strong> Monitors for incompatible licenses (Copyleft/Restricted OS) that could risk Intellectual Property.</li>
+                    <li><strong>Result Audit:</strong> Ensures the team maintains control; if the system becomes a "black box," the SM halts the sprint to re-establish human understanding.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. K-Agile Events</h2>
+            <p>The one-week Sprint is the optimal choice to balance generative acceleration with human governance.</p>
+            <ul>
+                <li><strong>Containing "AI Drift":</strong> Massive code volumes produced in days require frequent Semantic Reviews to keep the "Human-in-the-loop."</li>
+                <li><strong>Hyper-Fast Feedback:</strong> Waiting 2-3 weeks to validate a feature built in hours is an economic inefficiency.</li>
+                <li><strong>Context Sync:</strong> Weekly Context Refactoring prevents the AI's "knowledge" from diverging from reality.</li>
+            </ul>
+
+            <div class="rule-box">
+                "AI speed must never exceed the team's capacity for understanding. The one-week Sprint is the anchor of awareness over automation."
+            </div>
+
+            <h3>4.1 The Neural Briefing (Intent Synchronization)</h3>
+            <p>Replaces Planning. Converts verbal conversations into Context Packages (goals, constraints, and ready prompts).</p>
+
+            <h3>4.2 The Augmented Daily (Context Alignment)</h3>
+            <p>Analysis of the Context Delta: What changed in the codebase and knowledge in the last 24 hours? Is the AI aligned?</p>
+
+            <h3>4.3 Context Refactoring (Knowledge Hygiene)</h3>
+            <p>Prevents context degradation by removing obsolete prompts and verifying AI architectural understanding.</p>
+        </section>
+
+        <section>
+            <h2>5. K-Agile Artifacts</h2>
+            <ul>
+                <li><strong>The Living Context (K-Base):</strong> The heart of the system. Code, Knowledge Graph, and Meeting Memory.</li>
+                <li><strong>The Interactive Backlog:</strong> Goals linked to functional AI-generated prototypes.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Definition of Done (DoD)</h2>
+            <ul>
+                <li>Code generated/validated via Prompting.</li>
+                <li>Context documentation updated and AI has indexed the new code.</li>
+                <li>AI can explain the new feature (Explainability).</li>
+                <li>Product meets corporate AI Ethics values and current regulations.</li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>K-Agile Operational Framework • March 2026</p>
         </div>
-    </nav>
-
-    <header class="k-gradient text-white py-24 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight leading-tight">K-Agile Guide</h1>
-            <p class="text-xl md:text-2xl font-light opacity-90 mb-4">The Operational Framework for the AI Era</p>
-            <p class="text-sm font-mono opacity-70">Official Version 1.0 • March 24, 2026</p>
-        </div>
-    </header>
-
-    <main class="max-w-4xl mx-auto py-16 px-6">
-        
-        <section id="purpose" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6">1. Purpose of the Guide</h2>
-            <p class="text-lg text-slate-600">
-                K-Agile is an operational framework for developing and maintaining complex products, heavily inspired by Agile. 
-                This guide defines the roles, events, artifacts, and rules that bind these elements together. 
-                <span class="highlight">K-Agile is not a linear methodology but a circular ecosystem of knowledge.</span> 
-                The "K" stands for <span class="italic font-semibold leading-relaxed tracking-wide">Knowledge</span>. 
-                It is in no way an alternative to Agile; rather, it embraces and enhances all its original principles.
-            </p>
-        </section>
-
-        <section id="definition" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6">2. Definition</h2>
-            <p class="mb-8 text-slate-600">K-Agile is based on the awareness that Artificial Intelligence is not just a tool, but a cognitive agent that requires a structured context to function.</p>
-            
-            <div class="space-y-8">
-                <div class="section-card">
-                    <h3 class="font-bold text-xl mb-2">2.1 The Three Pillars of Augmented Empiricism</h3>
-                    <ul class="space-y-4 text-slate-700">
-                        <li><strong class="text-slate-900">1. Radical Transparency:</strong> Every decision (meeting/code) must be visible to the AI to prevent hallucinations. The entire codebase must be made known to the AI, which must demonstrate an understanding of its historical context, dependencies, style, and standards.</li>
-                        <li><strong class="text-slate-900">2. Semantic Inspection:</strong> The team doesn't just check if the code "runs," but whether the meaning (the intent) has been respected.</li>
-                        <li><strong class="text-slate-900">3. Prompt Adaptation:</strong> Continuous improvement involves refining the language and context provided to the machine.</li>
-                    </ul>
-                </div>
-
-                <div class="section-card border-purple-500">
-                    <h3 class="font-bold text-xl mb-2">2.2 K-Agile Values</h3>
-                    <ul class="grid md:grid-cols-2 gap-4 text-sm text-slate-600">
-                        <li><span class="font-bold text-slate-900 block">Courage:</span> To discard fast-generated code if it is not understood.</li>
-                        <li><span class="font-bold text-slate-900 block">Focus:</span> On business intent, leaving syntax to the machine.</li>
-                        <li><span class="font-bold text-slate-900 block">Responsibility:</span> The "Context Owner" is the guarantor of the system's truth.</li>
-                        <li><span class="font-bold text-slate-900 block">Explainability:</span> The ability to explain AI-driven choices to regulators or users.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="team" class="mb-16">
-            <h2 class="text-3xl font-bold mb-10">3. The K-Agile Team</h2>
-            
-            <div class="space-y-12">
-                <div>
-                    <h3 class="text-blue-600 font-black text-xs uppercase tracking-widest mb-2">3.1 The Product Owner</h3>
-                    <p class="text-xl font-bold mb-4 italic">The Visionary Prototyper</p>
-                    <p class="text-slate-600 mb-4">The PO is the first link in the technical production chain. They use AI to create "functional drafts" (MVPs). If a Story cannot be visualized or simulated by AI, it is not "Ready". This is mandatory after requirements gathering.</p>
-                </div>
-
-                <div>
-                    <h3 class="text-purple-600 font-black text-xs uppercase tracking-widest mb-2">3.2 The Developer</h3>
-                    <p class="text-xl font-bold mb-4 italic">The Context Owner & Master Prompter</p>
-                    <p class="text-slate-600 mb-6">The Developer is the director of software construction. They no longer write code; they orchestrate AI.</p>
-                    
-                    <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
-                        <h4 class="font-bold mb-4 text-blue-800">The RAG Methodology (Retrieval-Augmented Generation)</h4>
-                        <div class="grid gap-4 text-sm">
-                            <p><strong>Retrieval:</strong> The system queries the K-Base for code snippets and meeting transcripts.</p>
-                            <p><strong>Augmentation:</strong> Info is injected into the prompt for a contextualized instruction.</p>
-                            <p><strong>Generation:</strong> AI generates the final response based exclusively on provided data, eliminating hallucinations.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-emerald-600 font-black text-xs uppercase tracking-widest mb-2">3.3 The Scrum Master</h3>
-                    <p class="text-xl font-bold mb-4 italic">Flow & Governance Architect</p>
-                    <p class="text-slate-600 mb-4">The SM facilitates Human-AI synergy and guarantees system integrity. They monitor for "AI Drift" and cognitive burnout.</p>
-                    <ul class="text-sm bg-slate-900 text-slate-300 p-8 rounded-2xl space-y-3">
-                        <li><strong class="text-white">Compliance:</strong> Vigilance over AI Act, GDPR, and IP protection.</li>
-                        <li><strong class="text-white">Anti-Bias:</strong> Ensures algorithms don't introduce technical or logical prejudices.</li>
-                        <li><strong class="text-white">Audit:</strong> If the system becomes a "black box", the SM halts the sprint.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="events" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6">4. K-Agile Events</h2>
-            <div class="bg-amber-50 border-l-4 border-amber-400 p-6 mb-8 text-amber-900 italic">
-                "AI speed must never exceed the team's capacity for understanding. The one-week Sprint is the anchor."
-            </div>
-            <p class="text-slate-600 mb-8">The 1-week Sprint is the optimal choice to balance generative acceleration with human governance.</p>
-            
-            <div class="grid md:grid-cols-3 gap-6 text-sm">
-                <div class="p-6 bg-white shadow-sm border rounded-xl">
-                    <h4 class="font-bold mb-2">Neural Briefing</h4>
-                    <p>Converts verbal conversations into Context Packages (goals and prompt-ready intent).</p>
-                </div>
-                <div class="p-6 bg-white shadow-sm border rounded-xl">
-                    <h4 class="font-bold mb-2">Augmented Daily</h4>
-                    <p>Analysis of the "Context Delta": what changed in the last 24h? Is the AI aligned?</p>
-                </div>
-                <div class="p-6 bg-white shadow-sm border rounded-xl">
-                    <h4 class="font-bold mb-2">Context Refactoring</h4>
-                    <p>Hygiene ceremony to prevent context degradation and remove obsolete prompts.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="dod" class="py-12 bg-white border rounded-3xl p-10 shadow-sm">
-            <h2 class="text-2xl font-bold mb-6 text-center">6. Definition of Done (DoD)</h2>
-            <ol class="space-y-4 text-slate-700 max-w-lg mx-auto">
-                <li class="flex gap-3"><span class="font-bold">1.</span> Code generated or validated through Prompting.</li>
-                <li class="flex gap-3"><span class="font-bold">2.</span> K-Base updated and re-indexed by the AI.</li>
-                <li class="flex gap-3"><span class="font-bold">3.</span> AI can explain the feature's logic (Explainability).</li>
-                <li class="flex gap-3"><span class="font-bold">4.</span> Product complies with AI Ethics values and regulations.</li>
-            </ol>
-        </section>
-
-    </main>
-
-    <footer class="bg-slate-900 text-slate-500 py-12 text-center text-xs tracking-widest uppercase">
-        <p>&copy; 2026 K-Agile Framework • Knowledge over Automation</p>
-    </footer>
+    </div>
 
 </body>
 </html>
