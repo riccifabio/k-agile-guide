@@ -3,104 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K-Agile Framework | Official Documentation</title>
+    <title>K-Agile | The Official Framework</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { 
-            font-family: 'Plus Jakarta Sans', sans-serif; 
-            background-color: #ffffff; 
-            color: #1a1a1a;
-        }
-        .glass-nav {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid #e5e7eb;
-        }
-        .iframe-container {
-            position: relative;
-            width: 100%;
-            height: 85vh; /* Altezza ottimale per la lettura */
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e5e7eb;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        .btn-accent {
-            background-color: #2563eb;
-            transition: all 0.3s ease;
-        }
-        .btn-accent:hover {
-            background-color: #1d4ed8;
-            transform: translateY(-1px);
-        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; color: #1f2937; }
+        .hero-gradient { background: radial-gradient(circle at top right, #eff6ff 0%, #ffffff 50%); }
+        .pdf-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .pdf-card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px -12px rgba(37, 99, 235, 0.15); }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased hero-gradient min-h-screen flex flex-col">
 
-    <nav class="glass-nav sticky top-0 z-50 py-4">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-            <div class="text-xl font-extrabold tracking-tighter text-blue-600">
-                K-AGILE<span class="text-gray-900">.</span>
-            </div>
-            <div class="text-xs font-mono font-bold text-gray-400 uppercase tracking-widest">
-                Framework v1.0
-            </div>
-        </div>
+    <nav class="p-6 max-w-7xl mx-auto w-full flex justify-between items-center">
+        <div class="text-xl font-extrabold tracking-tighter text-blue-600">K-AGILE<span class="text-gray-900">.</span></div>
+        <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Release 2026</div>
     </nav>
 
-    <header class="max-w-5xl mx-auto pt-20 pb-12 px-6 text-center">
-        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-gray-900 mb-6">
-            The Operational Guide.
-        </h1>
-        <p class="text-xl text-gray-500 font-light max-w-2xl mx-auto leading-relaxed">
-            Welcome to the official repository of <span class="font-semibold text-gray-900">K-Agile</span>. 
-            A comprehensive framework designed to bridge human intent and AI velocity through structured knowledge.
-        </p>
-    </header>
+    <main class="flex-grow flex flex-col items-center justify-center px-6 py-12 text-center">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-gray-900 mb-8 leading-none">
+                Mastering the <span class="text-blue-600">AI-Native</span> Era.
+            </h1>
+            <p class="text-xl text-gray-500 mb-12 leading-relaxed max-w-2xl mx-auto">
+                K-Agile is the definitive operational framework designed to bridge human intent and machine velocity. Download the full documentation below.
+            </p>
 
-    <main class="max-w-6xl mx-auto px-6 pb-20">
-        <div class="mb-8 flex justify-between items-end">
-            <div>
-                <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">Live Documentation</h2>
-                <p class="text-gray-400 text-sm">Review the full White Paper below</p>
+            <div class="pdf-card bg-white border border-gray-100 rounded-3xl p-8 md:p-12 max-w-md mx-auto shadow-xl">
+                <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Full Framework Guide</h3>
+                <p class="text-sm text-gray-400 mb-8 uppercase tracking-widest">Version 1.0 • PDF • 4MB</p>
+                
+                <a href="K-Agile-Guide-v1.pdf" download class="block w-full py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200 mb-4">
+                    Download PDF
+                </a>
+                <a href="K-Agile-Guide-v1.pdf" target="_blank" class="block w-full py-2 text-sm text-blue-600 font-semibold hover:text-blue-800 transition">
+                    View in Browser ↗
+                </a>
             </div>
-            
-        </div>
-
-        <div class="iframe-container">
-            <iframe src="https://docs.google.com/document/d/e/2PACX-1vRegbUR8tAJ0tCP8DQvsmkZ1vRIPfxg5tngzP3P2RjGAa2lAkywoHzPaCEsQcW5TIEcF-W0Omg-XV3A/pub?embedded=true"></iframe>
         </div>
     </main>
 
-    <footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-12">
-        <div class="max-w-5xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-start mb-12">
-                <div class="space-y-4">
-                    <div class="text-2xl font-bold tracking-tighter italic">K-Agile Framework</div>
-                    <p class="text-sm text-gray-500 leading-relaxed max-w-sm">
-                        Empowering teams to master the era of Artificial Intelligence. 
-                        Knowledge over Automation. Intention over Syntax.
-                    </p>
-                </div>
-                <div class="md:text-right space-y-2">
-                    <p class="text-gray-900 font-bold text-lg">Fabio Ricci</p>
-                    <a href="mailto:riccifabio@icloud.com" class="text-blue-600 font-medium hover:underline">riccifabio@icloud.com</a>
-                    <div class="pt-4 text-[10px] text-gray-400 uppercase tracking-[0.3em]">
-                        Released under MIT License &bull; 2026
-                    </div>
-                </div>
+    <section class="max-w-5xl mx-auto w-full px-6 py-20 grid md:grid-cols-3 gap-12 border-t border-gray-50">
+        <div>
+            <h4 class="font-bold text-gray-900 mb-2 italic">Knowledge First</h4>
+            <p class="text-sm text-gray-500">The "K" in K-Agile stands for Knowledge. We prioritize context over simple syntax production.</p>
+        </div>
+        <div>
+            <h4 class="font-bold text-gray-900 mb-2 italic">Semantic Integrity</h4>
+            <p class="text-sm text-gray-500">A framework built to eliminate "Semantic Debt" and ensure AI-human alignment.</p>
+        </div>
+        <div>
+            <h4 class="font-bold text-gray-900 mb-2 italic">Enterprise Ready</h4>
+            <p class="text-sm text-gray-500">Universal principles applicable to teams of any size transitioning to AI orchestration.</p>
+        </div>
+    </section>
+
+    <footer class="p-12 border-t border-gray-50 text-center">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-left">
+                <p class="font-bold text-gray-900">Fabio Ricci</p>
+                <p class="text-xs text-gray-400">Architect of K-Agile Framework</p>
             </div>
-            <div class="text-center pt-8 border-t border-gray-200">
-                <p class="text-[10px] text-gray-300 uppercase tracking-widest">
-                    Built for the future of Software Engineering
-                </p>
-            </div>
+            <a href="mailto:riccifabio@icloud.com" class="text-blue-600 font-semibold text-sm">riccifabio@icloud.com</a>
         </div>
     </footer>
 
